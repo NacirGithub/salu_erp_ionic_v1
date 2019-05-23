@@ -1,5 +1,7 @@
 {
   "name": "salu_erp_ionic_v1",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
