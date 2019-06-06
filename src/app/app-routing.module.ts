@@ -9,8 +9,10 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: '../pages/home/home.module#HomePageModule'
-  }
+    loadChildren: './home/home.module#HomePageModule'
+  },
+  { path: 'categorias',
+    loadChildren: './categorias/categorias.module#CategoriasPageModule' }
   // },
   // {
   //   path: 'list',

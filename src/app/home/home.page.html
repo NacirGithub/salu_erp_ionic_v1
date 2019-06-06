@@ -1,0 +1,33 @@
+<!-- <ion-menu [disabled]="!isLoggedIn"></ion-menu> -->
+<ion-content padding class="home-page">
+  <h3>Sistema de Pedido</h3>
+  <img src="assets/imgs/logo.png" alt="logo">
+
+  <ion-card>
+
+    <ion-card-content>
+      <form>
+        <ion-item>
+          <ion-label position="floating">Email:</ion-label>
+          <ion-input type="text" [(ngModel)]="creds.email" name="email"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password"  [(ngModel)]="creds.senha" name="senha" ></ion-input>
+        </ion-item>
+
+        <ion-button (click)="login()" expand="block" fill="outline" color="primary">Entrar</ion-button>
+      </form>
+      <ion-button expand="block">Registar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>&copy; Nacir Ibraimo - 2019 </ion-title>
+  </ion-toolbar>
+</ion-footer>
